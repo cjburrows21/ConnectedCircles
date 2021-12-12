@@ -1,17 +1,16 @@
 body  {
-  background-color: #3DB2FF;
+  background-color: #6D8299;
 }
 
-hr {
-  background-color: #3DB2FF;
-  border-style: dotted none none none;
-  border-width: 5px;
-  width: 10%;
-  border-color: white;
+h1{
+  font-family: 'Montserrat';
+  font-size:3rem;
+  line-height: 1.5;
+  font-weight: 700;
+
 }
 
-
-h1 {
-  color: #FF2442;
-  --font: 
+img {
+  width: 100%;
+  height: auto;
 }
