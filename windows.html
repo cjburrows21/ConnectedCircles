@@ -60,9 +60,9 @@
                         Check-in Windows
                       </a>
                       <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Manage</a></li>
-                        <li><a class="dropdown-item" href="#">Add recurring</a></li>
-                        <li><a class="dropdown-item" href="#">Add one-off</a></li>
+                        <li><a class="dropdown-item" href="windows.html">Manage</a></li>
+                        <li><a class="dropdown-item" href="addrecurringwindow.html">Add recurring</a></li>
+                        <li><a class="dropdown-item" href="addadhocwindow.html">Add one-off</a></li>
                       </ul>
                     </li>
 
@@ -105,6 +105,7 @@
                         <th scope="col">Start Time</th>
                         <th scope="col">End Time</th>
                         <th scope="col">Reminder Period</th>
+                        <th scope="col">Who to alert</th>
                         <th scope="col">Status</th>
                         <th scope="col">Edit</th>
                         <th scope="col">Delete</th>
@@ -119,9 +120,10 @@
                         <td>06:00</td>
                         <td>09:00</td>
                         <td>30 min</td>
+                        <td>Inner circle only</td>
                         <td>On</td>
-                        <td><a href="editwindow.html" class="btn btn-secondary">Edit</a></td>
-                        <td><a href="editwindow.html" class="btn btn-secondary">Delete</a></td>
+                        <td><a href="editwindow.html" class="btn btn-primary">Edit</a></td>
+                        <td><a href="editwindow.html" class="btn btn-danger">Delete</a></td>
                       </tr>
 
                       <tr>
@@ -132,16 +134,55 @@
                         <td>06:00</td>
                         <td>11:00</td>
                         <td>30 min</td>
+                        <td>Complete circle</td>
                         <td>On</td>
-                        <td><a href="editwindow.html" class="btn btn-secondary">Edit</a></td>
-                        <td><a href="editwindow.html" class="btn btn-secondary">Delete</a></td>
+                        <td><a href="editwindow.html" class="btn btn-primary">Edit</a></td>
+                        <td><a href="editwindow.html" class="btn btn-danger">Delete</a></td>
                       </tr>
-
-
                     </tbody>
                   </table>
+                  <a href="addrecurringwindow.html" class="btn btn-primary" >Add recurring window</a>
                 </div>
 
+                <br>
+                  <br>
+                  <p>Your up and coming one-off windows</p>
+
+                  <div style="overflow-x:auto;">
+
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">Window Name</th>
+                          <th scope="col">From</th>
+                          <th scope="col">To</th>
+                          <th scope="col">Reminder Period</th>
+                          <th scope="col">Safety Notes</th>
+                          <th scope="col">Who to alert</th>
+                          <th scope="col">Status</th>
+                          <th scope="col">Edit</th>
+                          <th scope="col">Delete</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Coastal walk</td>
+                          <td>15/12/2021 08:15</td>
+                          <td>15/12/2021 11:30</td>
+                          <td>30 min</td>
+                          <td>Parked in Low Newton and walking to Howick</td>
+                          <td>Chris Burrows</td>
+                          <td>On</td>
+                          <td><a href="editwindow.html" class="btn btn-primary">Edit</a></td>
+                          <td><a href="editwindow.html" class="btn btn-danger">Delete</a></td>
+                        </tr>
+
+                      </tbody>
+                    </table>
+                    <a href="addadhocwindow.html" class="btn btn-primary">Add one-off window</a>
+                  </div>
 
          </div>
 
@@ -171,4 +212,3 @@
 
   </body>
 </html>
-
