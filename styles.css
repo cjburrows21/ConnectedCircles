@@ -17,9 +17,10 @@ form-label
   margin-bottom: 1px;
 
 }
-
 .container-fluid
 {
-  padding: 3%;
+/* top | right | bottom | left */
+  padding: 5% 3% 5% 3%
 
 }
+
