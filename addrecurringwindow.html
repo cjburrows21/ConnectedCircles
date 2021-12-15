@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- local css sheet-->
+    <link rel="stylesheet" href="CSS/styles.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <title>ConnectedCircles</title>
+  </head>
+
+  <body>
+
+
+      <section id="title">
+
+          <nav class="navbar navbar-expand-lg bg-dark navbar-dark px-3">
+
+            <a class ="navbar-brand" href="index.html">ConnectedCircles</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Connections
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Manage</a></li>
+                        <li><a class="dropdown-item" href="#">Add</a></li>
+                      </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Check-in Windows
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="windows.html">Manage</a></li>
+                        <li><a class="dropdown-item" href="addrecurringwindow.html">Add recurring</a></li>
+                        <li><a class="dropdown-item" href="addadhocwindow.html">Add one-off</a></li>
+                      </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Account
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                      </ul>
+                    </li>
+
+
+                </ul>
+
+            </div>
+          </nav>
+
+
+          <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-3">
+                  <h1>Add recurring window</h1>
+                  <form>
+                    <div class="mb-3">
+                      <label for="inputwindowname" class="form-label">Window Name</label>
+                      <input type="text" class="form-control" id="inputwindowname">
+                      <div id="passwordHelpBlock" class="form-text">eg. Weekday morning check-in routine</div>
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="inputfrequency" class="form-label">Frequency</label>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Select your frequency</option>
+                        <option value="Daily">Daily</option>
+                        <option value="Weekly">Weekly</option>
+                        <option value="Monthly">Monthly</option>
+                      </select>
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="inputdays" class="form-label">Choose your day(s)</label>
+                      <br>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">Mon</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">Tue</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">Wed</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">Thu</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">Fri</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">Sat</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                        <label class="form-check-label" for="inlineCheckbox2">Sun</label>
+                      </div>
+                    </div>
+
+
+                    <div class="mb-3">
+                      <label for="inputstarttime" class="form-label">Start Time</label>
+                      <input type="time" class="form-control" id="inputstarttime">
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="inputendtime" class="form-label">End Time</label>
+                      <input type="time" class="form-control" id="inputendtime">
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="inputreminderperiod" class="form-label">Reminder period (minutes)</label>
+                      <input type="number" class="form-control" id="inputreminderperiod">
+                      <div id="reminderperiodHelp" class="form-text">This is how long you give yourself to check-in once you've missed a window and received your reminder alert</div>
+                    </div>
+
+                    <div class="mb-3">
+                      <label for="inputfrequency" class="form-label">Who to alert?</label>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Select an option</option>
+                        <option value="Daily">Inner circle connections</option>
+                        <option value="Weekly">Outer circle connections</option>
+                        <option value="Monthly">All connections</option>
+                      </select>
+                        <div id="reminderperiodHelp" class="form-text">This determinesa which of your connections will be alerted should you not check-in and not response to the reminder alert in time either</div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Add window</button>
+                  </form>
+
+                </div>
+
+              </div>
+
+           </div>
+
+
+
+
+      </section>
+
+      <section id="features">
+      </section>
+
+      <section id="testimonials">
+      </section>
+
+      <section id="press">
+      </section>
+
+      <section id="pricing">
+      </section>
+
+      <section id="call to action">
+      </section>
+
+      <section id="footer">
+      </section>
+
+
+
+
+
+  </body>
+</html>
